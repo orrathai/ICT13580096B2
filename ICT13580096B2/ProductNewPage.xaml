@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="ICT13580096B2.ProductNewPage"
+    Title="เพิ่มสินค้าใหม่"
+    BackgroundColor="Silver">
+    <StackLayout
+        Orientation="Vertical"
+        Padding="10">
+        <Label
+            x:Name="titleLabel"
+            Text="เพิ่มสินค้าใหม่"
+            HorizontalOptions="Center"
+            FontSize="20"
+            FontAttributes="Bold"/>
+        <Label
+            Text="ชื่อสินค้า" />
+        <Entry
+            Placeholder="กรอกชื่อสินค้า"
+            x:Name="name" />
+        <Label
+            Text="รายละเอียด" />
+        <Editor
+            HeightRequest="80"
+            x:Name="ditel" />
+        <Label
+            Text="หมวด" />
+        <Picker
+            x:Name="catigory"
+            Title="กรอกหมวด" />
+        <Label
+            Text="ราคาสินค้า" />
+        <Entry
+            Placeholder="0.00"
+            x:Name="sellproduct" />
+        <Label
+            Text="ราคาขาย" />
+        <Entry
+            Placeholder="0.00"
+            x:Name="sell" />
+        <Label
+            Text="เพิ่มจำนวน" />
+        <Entry
+            Placeholder="0.00"
+            x:Name="num" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button
+                Text="ยกเลิก"
+                TextColor="White"
+                BackgroundColor="Red"
+                x:Name="not" />
+            <Button
+                Text="เพิ่มสินค้า"
+                TextColor="White"
+                BackgroundColor="Green"
+                x:Name="yes"
+                Grid.Column="1" />
+        </Grid>
+    </StackLayout>
+    
+
+</ContentPage>
